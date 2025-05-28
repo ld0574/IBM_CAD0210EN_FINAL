@@ -243,7 +243,7 @@ function ProductList() {
 
     const handleHomeClick = (e) => {
         e.preventDefault();
-        navigate('/IBM_CAD0210EN_FINAL/');
+        navigate('/');
     };
 
     const handleCartClick = (e) => {

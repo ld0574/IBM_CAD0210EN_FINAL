@@ -29,7 +29,7 @@ function AboutUs() {
         beauty of nature right at your doorstep.
       </p>
       <div className="get-started-container">
-        <Link to="/products" className="get-started-button">Get Started</Link>
+        <Link to="products" className="get-started-button">Get Started</Link>
       </div>
     </div>
   );
