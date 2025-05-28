@@ -13,3 +13,6 @@ IBM CAD0210EN Final Assignment on Edx
 ## Task 5: Import details to store.js
 
 ## Task 6: Set up the global store
+
+Final URL:
+https://ld0574.github.io/IBM_CAD0210EN_FINAL/
