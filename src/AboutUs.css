@@ -1,33 +1,89 @@
 .about-us-container {
-    width: 1000px;
-    /* margin: 0 auto; */
-    /* padding: 20px; */
-    /* background-color: red; */
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
     text-align: justify;
-  }
-  
-  .about-us-heading {
-    font-size: 32px;
+    background-image: url('https://images.unsplash.com/photo-1466781783364-36c955e42a7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about-us-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+}
+
+.about-us-header {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.company-name {
+    font-size: 48px;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .about-us-description {
-    font-size: 18px;
-    color: #666;
+    color: #2c5530;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-description {
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    color: #2c5530;
     margin-bottom: 30px;
     text-align: center;
-  }
-  
-  .about-us-content {
+    font-weight: 500;
+}
+
+.about-us-content {
+    position: relative;
+    z-index: 2;
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  .plant_logo_right{
-    text-align: right;
-  }
+    color: #333;
+    line-height: 1.6;
+}
 
-  .plant_logo_left{
+.get-started-container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.get-started-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #2c5530;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-button:hover {
+    background-color: #1e3c21;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plant_logo_right{
+    text-align: right;
+}
+
+.plant_logo_left{
     text-align: left;
-  }
+}

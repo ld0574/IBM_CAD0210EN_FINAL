@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ProductList.css'
 import CartItem from './CartItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from './CartSlice';
 
-function ProductList({ onHomeClick }) {
+function ProductList() {
+    const navigate = useNavigate();
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
     const [showCart, setShowCart] = useState(false);
@@ -241,13 +243,14 @@ function ProductList({ onHomeClick }) {
 
     const handleHomeClick = (e) => {
         e.preventDefault();
-        onHomeClick();
+        navigate('/');
     };
 
     const handleCartClick = (e) => {
         e.preventDefault();
-        setShowCart(true); // Set showCart to true when cart icon is clicked
+        setShowCart(true);
     };
+
     const handlePlantsClick = (e) => {
         e.preventDefault();
         setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked

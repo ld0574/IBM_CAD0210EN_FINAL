@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutUs.css';
 
 function AboutUs() {
   return (
     <div className="about-us-container">
-      {/* <h1 className="about-us-heading">About Us</h1> */}
+      <div className="about-us-header">
+        <h1 className="company-name">Paradise Nursery</h1>
+      </div>
       <p className="about-us-description">Welcome to Paradise Nursery, where green meets serenity!</p>
       <p className="about-us-content">
         At Paradise Nursery, we are passionate about bringing nature closer to you. Our mission is to provide a wide range of 
@@ -25,6 +28,9 @@ function AboutUs() {
         Join us in our mission to create a greener, healthier world. Visit Paradise Nursery today and experience the 
         beauty of nature right at your doorstep.
       </p>
+      <div className="get-started-container">
+        <Link to="/products" className="get-started-button">Get Started</Link>
+      </div>
     </div>
   );
 }
