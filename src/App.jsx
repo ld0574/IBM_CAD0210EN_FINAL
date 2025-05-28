@@ -6,7 +6,7 @@ import AboutUs from './AboutUs';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/IBM_CAD0210EN_FINAL">
       <div className="app-container">
         <Routes>
           <Route path="/" element={<AboutUs />} />
